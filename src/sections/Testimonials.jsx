@@ -15,8 +15,20 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <GlowCard card={testimonial} key={index} index={index}>
               <div className="flex items-center gap-3">
-                <div>
-                  <img src={testimonial.imgPath} alt="" />
+                <div className="size-12 rounded-full overflow-hidden border border-black-50 bg-black-100 flex items-center justify-center shrink-0">
+                  <img
+                    src={testimonial.imgPath}
+                    alt={testimonial.name}
+                    className="w-full h-full object-cover"
+                    style={
+                      testimonial.scale
+                        ? {
+                            transform: `scale(${testimonial.scale})`,
+                            transformOrigin: "center",
+                          }
+                        : undefined
+                    }
+                  />
                 </div>
                 <div>
                   <p className="font-bold">{testimonial.name}</p>

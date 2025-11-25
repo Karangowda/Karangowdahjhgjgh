@@ -165,10 +165,14 @@ section {
       @apply h-full flex flex-col justify-between xl:w-[60%];
 
       .image-wrapper {
-        @apply xl:h-[70vh] md:h-[50vh] h-96 relative;
+        @apply xl:h-[60vh] md:h-[45vh] h-80 relative;
+
+        a {
+          @apply w-full h-full block cursor-pointer;
+        }
 
         img {
-          @apply w-full h-full object-cover rounded-xl absolute inset-0;
+          @apply w-full h-full object-contain rounded-xl absolute inset-0;
         }
       }
 
@@ -190,6 +194,10 @@ section {
 
       .image-wrapper {
         @apply xl:h-[37vh] md:h-52 lg:h-72 h-64 relative rounded-xl xl:px-5 2xl:px-12 py-0;
+
+        a {
+          @apply w-full h-full block cursor-pointer;
+        }
       }
 
       img {

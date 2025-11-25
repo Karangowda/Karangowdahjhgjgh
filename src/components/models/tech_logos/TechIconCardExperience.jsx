@@ -15,9 +15,10 @@ const TechIconCardExperience = ({ model }) => {
           }
         }
       });
-    }
+    } 
   }, [scene]);
 
+  
   return (
     <Canvas>
       <ambientLight intensity={0.3} />
