@@ -17,7 +17,7 @@ const navLinks = [
   },
   {
     name: "Resume",
-    link: "/KaranGowda Cloud Engineer - Masked.pdf",
+    link: "/KaranGowda CloudEngineer.pdf",
     external: true,
     download: true,
   },

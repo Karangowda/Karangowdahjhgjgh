@@ -31,9 +31,35 @@ const NavBar = () => {
 
         <nav className="desktop">
           <ul>
-            {navLinks.map(({ link, name }) => (
+            {navLinks.map(({ link, name, download, external }) => (
               <li key={name} className="group">
-                <a href={link}>
+                <a
+                  href={link}
+                  download={download ? link.split("/").pop() : undefined}
+                  target={external ? "_blank" : undefined}
+                  rel={external ? "noreferrer" : undefined}
+                  onClick={async (e) => {
+                    if (download) {
+                      e.preventDefault();
+                      try {
+                        const response = await fetch(link);
+                        const blob = await response.blob();
+                        const url = window.URL.createObjectURL(blob);
+                        const linkElement = document.createElement("a");
+                        linkElement.href = url;
+                        linkElement.download = link.split("/").pop();
+                        document.body.appendChild(linkElement);
+                        linkElement.click();
+                        document.body.removeChild(linkElement);
+                        window.URL.revokeObjectURL(url);
+                      } catch (error) {
+                        console.error("Error downloading file:", error);
+                        // Fallback to direct link
+                        window.open(link, "_blank");
+                      }
+                    }
+                  }}
+                >
                   <span>{name}</span>
                   <span className="underline" />
                 </a>
