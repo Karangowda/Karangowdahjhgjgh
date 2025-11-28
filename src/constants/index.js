@@ -193,7 +193,7 @@ const techStackIcons = [
 const expCards = [
   
   {
-    review: "Karan brought clarity and stability to our cloud ecosystem. He optimized performance, tightened security, and resolved issues we’d been struggling with for months. His ability to simplify complex cloud workflows and deliver clean, reliable solutions makes him an invaluable engineer.",
+    review: "Karan brought clarity and stability to our cloud ecosystem. He optimized performance, tightened security, and resolved issues we'd been struggling with for months. His ability to simplify complex cloud workflows and deliver clean, reliable solutions makes him an invaluable engineer.",
     logoPath: "/images/logos/az.png",
     imgPath: "/images/logos/black.png",
     title: "Azure Cloud Engineer ",
@@ -239,7 +239,7 @@ const testimonials = [
     name: "Naveen",
     mentions: "@naveenkopparam",
     review:
-      "I can’t say enough good things about Karan. He was able to take our entire cloud infra modernize it, set standards, reduced cloud bill by 10%.",
+      "I can't say enough good things about Karan. He was able to take our entire cloud infra modernize it, set standards, reduced cloud bill by 10%.",
     imgPath: "/images/logos/nvn.jpg",
    
     
@@ -262,14 +262,14 @@ const testimonials = [
     name: "Rudratalur",
     mentions: "@Rudratalur_dk",
     review:
-      "Karan was a pleasure to work with. He turned our outdated Infra into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+      "Karan was a pleasure to work with. He turned our outdated Infra into a fresh, intuitive platform that's both modern and easy to navigate. Fantastic work overall.",
     imgPath: "/images/logos/rud.jpg",
   },
   {
     name: "Shivaay",
     mentions: "@Eshwardeepu",
     review:
-      "Karan’s expertise in cloud is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+      "Karan's expertise in cloud is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He's a true professional!",
     imgPath: "/images/logos/shi.jpg",
   },
   {
